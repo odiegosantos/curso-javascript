@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo 13</title>
+</head>
+
+<body>
+  <script>
+    var preco = Number(prompt("Valor Produto R$: "));
+
+    var aVista = preco * 0.90;
+    var parcelado = preco / 3;
+
+    alert("Preço R$: " + preco +
+      "\nA Vista R$: " + aVista +
+      "\nParcelado em 3x de R$: " + parcelado.toFixed(2));
+  </script>
+</body>
+
+</html>
