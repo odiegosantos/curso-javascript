@@ -42,7 +42,7 @@ Curso de Javascript dividido em 8 capítulos
 :heavy_check_mark: Capítulo 1;\
 :heavy_check_mark: Capítulo 2;\
 :heavy_check_mark: Capítulo 3;\
-:x: Capítulo 4;\
+:heavy_check_mark: Capítulo 4;\
 :x: Capítulo 5;\
 :x: Capítulo 6;\
 :x: Capítulo 7;\
