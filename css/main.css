@@ -26,6 +26,9 @@ input {
   font-size: 1rem;
   font-weight: bold;
 }
+pre {
+  font-size: 1.5rem;
+}
 .align-center {
   font-size: 2rem;
   display: flex;
