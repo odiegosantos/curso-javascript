@@ -40,8 +40,8 @@ Curso de Javascript dividido em 8 capítulos
 ## :sparkles: Features ##
 
 :heavy_check_mark: Capítulo 1;\
-:x: Capítulo 2;\
-:x: Capítulo 3;\
+:heavy_check_mark: Capítulo 2;\
+:heavy_check_mark: Capítulo 3;\
 :x: Capítulo 4;\
 :x: Capítulo 5;\
 :x: Capítulo 6;\
