@@ -21,6 +21,19 @@ button {
   font-size: 1rem;
   background-color: #fff;
 }
+.btn {
+  color: #fff;
+  cursor: pointer;
+}
+.btnBlue {
+  background-color: #0000ff;
+}
+.btnRed {
+  background-color: #ff0000;
+}
+.btnGreen {
+  background-color: #008000;
+}
 input {
   padding: .1rem;
   font-size: 1rem;
@@ -33,6 +46,6 @@ pre {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
