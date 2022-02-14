@@ -39,6 +39,7 @@ Javascript course divided into 8 chapters
 
 ## :sparkles: Features ##
 
+<<<<<<< HEAD
 :heavy_check_mark: Part 1;\
 :heavy_check_mark: Part 2;\
 :heavy_check_mark: Part 3;\
@@ -47,6 +48,16 @@ Javascript course divided into 8 chapters
 :x: Part 6;\
 :x: Part 7;\
 :x: Part 8;
+=======
+:heavy_check_mark: Capítulo 1;\
+:heavy_check_mark: Capítulo 2;\
+:heavy_check_mark: Capítulo 3;\
+:heavy_check_mark: Capítulo 4;\
+:x: Capítulo 5;\
+:x: Capítulo 6;\
+:x: Capítulo 7;\
+:x: Capítulo 8;
+>>>>>>> 954da190aed52f5284b4a5f7ead01295e92a4066
 
 ## :rocket: Tecnologias ##
 
