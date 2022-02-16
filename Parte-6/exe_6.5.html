@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Exemplo 5</title>
+</head>
+
+<body>
+
+  <button>
+    <a href="index.html">Voltar</a>
+  </button>
+
+  <div class="align-center">
+    <h1>Vencimento conta:</h1>
+    <p>
+      <input type="date" id="inData" autofocus>
+    </p>
+    <p>Valor R$:
+      <input type="text" id="inValor">
+      <input type="button" value="Calcular" id="btCalcular">
+    </p>
+    <p>Multa R$:
+      <input type="text" id="outMulta" readonly>
+    </p>
+    <p>Juros R$:
+      <input type="text" id="outJuros" readonly>
+    </p>
+    <p> Total R$:
+      <input type="text" id="outTotal" readonly>
+      <input type="button" value="Nova Conta" id="btGerar">
+    </p>
+  </div>
+  <script src="js/exe6_5.js"></script>
+</body>
+
+</html>
