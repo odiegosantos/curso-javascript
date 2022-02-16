@@ -6,14 +6,6 @@
 
 <h1 align="center">Javascript Course</h1>
 
-<!-- Status -->
-
-<h4 align="center"> 
-	🚧  Javascript Course 🚀 under construction...  🚧
-</h4> 
-
-<hr>
-
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -35,7 +27,7 @@ Javascript course divided into 8 chapters
 :heavy_check_mark: Part 3;\
 :heavy_check_mark: Part 4;\
 :heavy_check_mark: Part 5;\
-:x: Part 6;\
+:heavy_check_mark: Part 6;\
 :x: Part 7;\
 :x: Part 8;
 
