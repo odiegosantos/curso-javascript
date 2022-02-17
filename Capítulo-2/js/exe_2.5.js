@@ -8,8 +8,9 @@ function calcularPreco() {
 
   var minutos = Math.ceil(tempo / 15);
   var pagar = Number(valor * minutos);
+  var valoPagar = 'Valor a Pagar R$:';
 
-  outValor.textContent = `Valor a Pagar R$: ${pagar.toFixed(2)}`;
+  outValor.textContent = `${valoPagar} ${pagar.toFixed(2)}`;
 }
 var btCalcular = document.getElementById("btCalcular");
 btCalcular.addEventListener("click", calcularPreco);

@@ -7,8 +7,9 @@ function calcularPreco() {
   var consumo = Number(inConsumo.value);
 
   var valor = (quilo / 1000) * consumo;
+  var valorPagar = 'Valor a Pagar R$:';
 
-  outValor.textContent = `Valor a Pagar R$: ${valor.toFixed(2)}`;
+  outValor.textContent = `${valorPagar} ${valor.toFixed(2)}`;
 }
 var btCalcular = document.getElementById("btCalcular");
 btCalcular.addEventListener("click", calcularPreco);

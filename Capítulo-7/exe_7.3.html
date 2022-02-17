@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Exemplo 3</title>
+</head>
+
+<body>
+
+  <button>
+    <a href="index.html">Voltar</a>
+  </button>
+
+  <div class="align-center">
+    <h1>Controle de Pedidos</h1>
+    <p>Pedido:
+      <input type="radio" name="produto" id="rbPizza" checked autofocus> Pizza
+      <input type="radio" name="produto" id="rbBebida"> Bebida
+      <span>Item:</span>
+      <select id="inPizza">
+        <option value="media">Média</option>
+        <option value="Grande">Grande</option>
+        <option value="Familia">Família</option>
+      </select>
+      <select id="inBebida" class="oculta">
+        <option value="refri">Refrigerante</option>
+        <option value="suco">Jarra de Suco</option>
+        <option value="agua">Água Mineral</option>
+      </select>
+    </p>
+    <p>Adicionar Complementos:
+      <input type="text" id="inDetalhes">
+      <input type="button" value="Adicionar" id="btAdicionar">
+    </p>
+    <pre id="outPedido"></pre>
+  </div>
+  <script src="js/exe7_3.js"></script>
+</body>
+
+</html>

@@ -8,9 +8,10 @@ function verificarTriangulo() {
   var ladoA = Number(inLadoA.value);
   var ladoB = Number(inLadoB.value);
   var ladoC = Number(inLadoC.value);
+  var informeDados = `Informe lados válidos para o Triângulo`;
 
   if (ladoA === 0 || ladoB === 0 || ladoC === 0 || isNaN(ladoA) || isNaN(ladoB) || isNaN(ladoC)) {
-    alert("Informe lados válidos para o Triângulo");
+    alert(`${informeDados}`);
     inLadoA.focus();
     return;
   }
