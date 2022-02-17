@@ -28,7 +28,7 @@ Javascript course divided into 8 chapters
 :heavy_check_mark: Part 4\
 :heavy_check_mark: Part 5\
 :heavy_check_mark: Part 6\
-:x: Part 7\
+:heavy_check_mark: Part 7\
 :x: Part 8
 
 ## :rocket: Technologies ##
