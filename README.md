@@ -22,14 +22,14 @@ Javascript course divided into 8 chapters
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Part 1\
-:heavy_check_mark: Part 2\
-:heavy_check_mark: Part 3\
-:heavy_check_mark: Part 4\
-:heavy_check_mark: Part 5\
-:heavy_check_mark: Part 6\
-:x: Part 7\
-:x: Part 8
+:heavy_check_mark: Chapter 1\
+:heavy_check_mark: Chapter 2\
+:heavy_check_mark: Chapter 3\
+:heavy_check_mark: Chapter 4\
+:heavy_check_mark: Chapter 5\
+:heavy_check_mark: Chapter 6\
+:heavy_check_mark: Chapter 7\
+:x: Chapter 8
 
 ## :rocket: Technologies ##
 
