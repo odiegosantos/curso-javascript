@@ -1,14 +1,21 @@
-function numeroImparPar() {
-  var inNumero = document.getElementById("inNumero");
-  var outResposta = document.getElementById("outResposta");
+function verificarParImpar() {
+  let inNumero = document.getElementById("inNumero");
+  let numero = Number(inNumero.value);
 
-  var numero = Number(inNumero.value);
+  let menssagemPar = `O Número: ${numero}  é Par!`;
+  let menssagemImpar = `O Número: ${numero}  é Impar!`;
 
   if (numero % 2 == 0) {
-    outResposta.textContent = `O Número: ${numero}  é Par!`;
+    document.getElementById("outResposta")
+      .textContent = `${menssagemPar}`;
   } else {
-    outResposta.textContent = `O Número: ${numero}  é Ímpar!`;
+    document.getElementById("outResposta")
+      .textContent = `${menssagemImpar}`;
   }
+}
+
+function numeroImparPar() {
+  verificarParImpar();
 }
 var btMostrar = document.getElementById("btMostrar");
 btMostrar.addEventListener("click", numeroImparPar);

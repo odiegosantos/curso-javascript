@@ -1,11 +1,11 @@
 function calcularVacina() {
   var inValor = document.getElementById("inValor");
-  var selConvenio = document.getElementById("inConvenio");
+  var convenio = document.getElementById("inConvenio");
 
   var valor = Number(inValor.value);
 
   if (valor == 0 || isNaN(valor)) {
-    alert("Informe um Valor Válido");
+    alert("Informe apenas números");
     inValor.focus();
     return;
   }
@@ -13,7 +13,7 @@ function calcularVacina() {
   var desconto;
 
   if (rbSim.checked) {
-    if (selConvenio.value == "amigo") {
+    if (convenio.value == "amigo") {
       desconto = calcularDesconto(valor, 20);
     } else {
       desconto = calcularDesconto(valor, 50);

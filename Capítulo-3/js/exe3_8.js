@@ -1,21 +1,28 @@
-function calcularSituacao() {
+function condicao() {
   var inVelMax = document.getElementById("inVelMax");
   var inVelCond = document.getElementById("inVelCond");
-  var outSituacao = document.getElementById("outSituacao");
 
-  var velMax = Number(inVelMax.value);
-  var velCond = Number(inVelCond.value);
+  var velMaxima = Number(inVelMax.value);
+  var velCondutor = Number(inVelCond.value);
 
-  if (velCond <= velMax) {
-    outSituacao.textContent = "Situação: Sem Multa ";
-  } else {
-    var maisVinte = velMax * 1.20;
-    if (velCond <= maisVinte) {
-      outSituacao.textContent = "Situação: Multa Leve ";
+  var semMulta = "Situação: Sem Multa";
+  var multaLeve = "Situação: Multa Leve";
+  var multaGrave = "Situação: Multa Grave";
+  var maisVinte = velMaxima * 1.20;
+
+  if (velCondutor <= velMaxima) {
+    document.getElementById("situacao").textContent = `${semMulta}`;
+  }
+  else {
+    if (velCondutor <= maisVinte) {
+      document.getElementById("situacao").textContent = `${multaLeve}`;
     } else {
-      outSituacao.textContent = "Situação: Multa Grave ";
+      document.getElementById("situacao").textContent = `${multaGrave}`;
     }
   }
 }
+function situacao() {
+  condicao();
+}
 var btMostrar = document.getElementById("btMostrar");
-btMostrar.addEventListener("click", calcularSituacao);
+btMostrar.addEventListener("click", situacao);
