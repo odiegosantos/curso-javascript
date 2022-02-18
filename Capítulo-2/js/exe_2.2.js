@@ -2,8 +2,6 @@ function converterDuracao() {
 
   var inTitulo = document.getElementById("inTitulo");
   var inDuracao = document.getElementById("inDuracao");
-  var outTitulo = document.getElementById("outTitulo");
-  var outResposta = document.getElementById("outResposta");
 
   var titulo = inTitulo.value;
   var duracao = Number(inDuracao.value);
@@ -11,9 +9,13 @@ function converterDuracao() {
   var horas = Math.floor(duracao / 60);
   var minutos = duracao % 60;
 
-  outTitulo.textContent = ` O Filme ${titulo} Tem`;
-  outResposta.textContent = `${horas} Hora(s)`;
-  outResposta.textContent = `${minutos} Minutos(s)`;
+  var outTitulo = `Duração de ${titulo}`;
+  var outDuracao = `${horas} hora(s) ${minutos} minuto(s)`;
+
+  document.getElementById("outTitulo")
+    .textContent = `${outTitulo}`;
+  document.getElementById("outResposta")
+    .textContent = `${outDuracao}`;
 }
 var btConverter = document.getElementById("btConverter");
 btConverter.addEventListener("click", converterDuracao);
