@@ -6,10 +6,10 @@ function verificarParImpar() {
   let menssagemImpar = `O Número: ${numero}  é Impar!`;
 
   if (numero % 2 == 0) {
-    document.getElementById("outResposta")
+    outResposta
       .textContent = `${menssagemPar}`;
   } else {
-    document.getElementById("outResposta")
+    outResposta
       .textContent = `${menssagemImpar}`;
   }
 }

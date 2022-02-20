@@ -6,10 +6,9 @@ function condicao() {
   if (horaNY > 24) {
     horaNY = horaNY - 24;
   }
-  
+
   var menssagem = `Hora em New York: ${horaNY.toFixed(2)}`;
-  document.getElementById("outHoraNY")
-    .textContent = `${menssagem}`;
+  outHoraNY.textContent = `${menssagem}`;
 }
 
 function calcularFuso() {

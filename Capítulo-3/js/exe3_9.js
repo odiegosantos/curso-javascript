@@ -24,10 +24,9 @@ function condicao() {
   var menssagemTempo = `Tempo: ${tempo} min`;
   var menssagemTroco = `Troco R$: ${troco.toFixed(2)}`;
 
-  document.getElementById("outTempo")
-    .textContent = `${menssagemTempo}`;
+  outTempo.textContent = `${menssagemTempo}`;
   if (troco > 0) {
-    document.getElementById("outTroco")
+    outTroco
       .textContent = `${menssagemTroco}`;
   }
 }

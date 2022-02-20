@@ -11,13 +11,13 @@ function condicao() {
   var maisVinte = velMaxima * 1.20;
 
   if (velCondutor <= velMaxima) {
-    document.getElementById("situacao").textContent = `${semMulta}`;
+    outSituacao.textContent = `${semMulta}`;
   }
   else {
     if (velCondutor <= maisVinte) {
-      document.getElementById("situacao").textContent = `${multaLeve}`;
+      outSituacao.textContent = `${multaLeve}`;
     } else {
-      document.getElementById("situacao").textContent = `${multaGrave}`;
+      outSituacao.textContent = `${multaGrave}`;
     }
   }
 }
