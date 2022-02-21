@@ -1,7 +1,5 @@
 function criarEstrelas() {
   var inNumero = document.getElementById("inNumero");
-  var outResposta = document.getElementById("outResposta");
-
   var num = Number(inNumero.value);
 
   if (num == 0 || isNaN(num)) {

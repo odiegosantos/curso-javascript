@@ -1,7 +1,6 @@
 var pacientes = [];
 function adicionarPaciente() {
   var inPaciente = document.getElementById("inPaciente");
-  var outLista = document.getElementById("outLista");
   var nome = inPaciente.value;
 
   if (nome == "") {
@@ -28,7 +27,6 @@ btAdicionar.addEventListener("click", adicionarPaciente);
 
 function atendimentoUrgencia() {
   var inPaciente = document.getElementById("inPaciente");
-  var outLista = document.getElementById("outLista");
   var nome = inPaciente.value;
 
   if (nome == "") {
@@ -61,10 +59,6 @@ function atenderPaciente() {
     inPaciente.focus();
     return;
   }
-
-  var outAtendimento = document.getElementById("outAtendimento");
-  var outLista = document.getElementById("outLista");
-
   var atender = pacientes.shift();
 
   outAtendimento.textContent = atender;
@@ -74,7 +68,6 @@ function atenderPaciente() {
   for (i = 0; i < pacientes.length; i++) {
     lista += (i + 1) + ". " + pacientes[i] + "\n";
   }
-
   outLista.textContent = lista;
 }
 var btAtender = document.getElementById("btAtender");

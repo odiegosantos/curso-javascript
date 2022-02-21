@@ -26,8 +26,7 @@ function condicao() {
 
   outTempo.textContent = `${menssagemTempo}`;
   if (troco > 0) {
-    outTroco
-      .textContent = `${menssagemTroco}`;
+    outTroco.textContent = `${menssagemTroco}`;
   }
 }
 

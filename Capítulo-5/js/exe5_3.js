@@ -13,7 +13,10 @@ function adicionarCarros() {
     return;
   }
 
-  carros.push({ modelo: modelo, preco: preco });
+  carros.push({
+    modelo: modelo,
+    preco: preco
+  });
 
   inModelo.value = "";
   inPreco.value = "";

@@ -1,11 +1,8 @@
 function verificarPerfeito() {
   var inNumero = document.getElementById("inNumero");
-  var outDivisores = document.getElementById("outDivisores");
-  var outResposta = document.getElementById("outResposta");
-
   var numero = Number(inNumero.value);
 
-  if (numero == 0 || isNaN(numero)) {
+  if (numero === 0 || isNaN(numero)) {
     alert("Informe um número válido...");
     inNumero.focus();
     return;
@@ -15,20 +12,22 @@ function verificarPerfeito() {
   var soma = 1;
 
   for (var i = 2; i <= numero / 2; i++) {
-    if (numero % i == 0) {
+    if (numero % i === 0) {
       divisores = divisores + ", " + i;
       soma = soma + i
     }
   }
   divisores = `${divisores} (Soma: ${soma} )`;
 
-  outDivisores.textContent = divisores;
+  var simPerfeito = `${numero} - é um Número Perfeito`;
+  var naoPerfeito = `${numero} - Não é um Número Perfeito`;
 
-  if (numero == soma) {
-    outResposta.textContent = `${numero} - é um Número Perfeito`;
+  if (numero === soma) {
+    outResposta.textContent = `${simPerfeito}`;
   } else {
-    outResposta.textContent = `${numero} - Não é um Número Perfeito`;
+    outResposta.textContent = `${naoPerfeito}`;
   }
+  outDivisores.textContent = divisores;
 }
 var btVerificar = document.getElementById("btVerificar");
 btVerificar.addEventListener("click", verificarPerfeito);

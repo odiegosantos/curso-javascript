@@ -1,8 +1,7 @@
 function preencherEstrelas() {
   var inNumero = document.getElementById("inNumero");
-  var outEstrelas = document.getElementById("outEstrelas");
-
   var num = Number(inNumero.value);
+  
   var estrelas = "";
 
   if (num == 0 || isNaN(num)) {

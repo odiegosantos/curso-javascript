@@ -1,12 +1,8 @@
 const mult = 10;
 var inNumero = document.getElementById("inNumero");
-var outTabuada = document.getElementById("outTabuada");
-
 
 function mostrarTabuada() {
-
   var numero = Number(inNumero.value);
-  
   if (numero === 0 || isNaN(numero)) {
     alert("Informe uma número válido...");
     inNumero.focus();

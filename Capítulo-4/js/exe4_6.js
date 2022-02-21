@@ -1,7 +1,5 @@
-function verificarPrimo() {
+function verificar() {
   var inNumero = document.getElementById("inNumero");
-  var outResposta = document.getElementById("outResposta");
-
   var num = Number(inNumero.value);
 
   if (num === 0 || isNaN(num)) {
@@ -19,10 +17,13 @@ function verificarPrimo() {
     }
   }
 
+  var simPrimo = `${num} é  Primo`;
+  var naoPrimo = `${num} Não é Primo`;
+  
   if (num > 1 && !temDivisor) {
-    outResposta.textContent = `${num} é  Primo`;
+    outResposta.textContent = `${simPrimo}`;
   } else {
-    outResposta.textContent = `${num} Não é Primo`;
+    outResposta.textContent = `${naoPrimo}`;
   }
 
 // Outras formas de resolver o mesmo problema
@@ -39,5 +40,5 @@ function verificarPrimo() {
 //     outResposta.textContent = `${num} Não é Primo`;
 //   }
 }
-var btVerificarPrimo = document.getElementById("btVerificarPrimo");
-btVerificarPrimo.addEventListener("click", verificarPrimo);
+var btVerificar = document.getElementById("btVerificar");
+btVerificar.addEventListener("click", verificar);

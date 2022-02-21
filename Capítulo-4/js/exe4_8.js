@@ -1,12 +1,11 @@
 function imprimir() {
   var inNome = document.getElementById("inNome");
   var inNumero = document.getElementById("inNumero");
-  var outResposta = document.getElementById("outResposta");
 
-  var fruta = inNome.value;
+  var nome = inNome.value;
   var num = Number(inNumero.value);
 
-  if (fruta == "" || num == 0 || isNaN(num)) {
+  if (nome == "" || num == 0 || isNaN(num)) {
     alert("Informe corretamente os dados");
     inNome.focus();
     return;
@@ -15,9 +14,9 @@ function imprimir() {
   var resposta = "";
 
   for (var i = 1; i < num; i++) {
-    resposta = resposta + fruta + " * ";
+    resposta = resposta + nome + " * ";
   }
-  resposta = resposta + fruta;
+  resposta = resposta + nome;
   outResposta.textContent = resposta;
 }
 var btRepetir = document.getElementById("btRepetir");
