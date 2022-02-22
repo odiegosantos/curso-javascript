@@ -18,7 +18,7 @@
 
 ## :dart: Sobre ##
 
-Javascript course divided into 8 chapters
+Javascript course divided into 7 chapters
 
 ## :sparkles: Features ##
 
@@ -28,8 +28,7 @@ Javascript course divided into 8 chapters
 :heavy_check_mark: Chapter 4\
 :heavy_check_mark: Chapter 5\
 :heavy_check_mark: Chapter 6\
-:heavy_check_mark: Chapter 7\
-:x: Chapter 8
+:heavy_check_mark: Chapter 7
 
 ## :rocket: Technologies ##
 
