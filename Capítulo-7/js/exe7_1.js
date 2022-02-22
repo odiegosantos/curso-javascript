@@ -2,8 +2,6 @@ function mostrarDados() {
   var inModelo = document.getElementById("inModelo");
   var inAno = document.getElementById("inAno");
   var inPreco = document.getElementById("inPreco");
-  var outClassif = document.getElementById("outClassif");
-  var outPrecoVenda = document.getElementById("outPrecoVenda");
 
   var modelo = inModelo.value;
   var ano = Number(inAno.value);

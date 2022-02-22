@@ -29,7 +29,7 @@ function listarTimes() {
   for (i = 0; i < times.length; i++) {
     lista += `${(i + 1)}.  ${times[i]} \n`;
   }
-  document.getElementById("outLista").textContent = lista;
+  outLista.textContent = lista;
 }
 var btListar = document.getElementById("btListar");
 btListar.addEventListener("click", listarTimes);
@@ -49,7 +49,8 @@ function montarJogos() {
   for (i = 0; i < tam / 2; i++) {
     jogos += `${times[i]} x ${times[ultimo - i]} \n`;
   }
-  document.getElementById("outLista").textContent = jogos;
+
+  outLista.textContent = jogos;
 }
 var btMontar = document.getElementById("btMontar");
 btMontar.addEventListener("click", montarJogos);

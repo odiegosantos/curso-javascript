@@ -1,8 +1,6 @@
 function calcularDataLimite() {
   var inData = document.getElementById("inData");
   var inValor = document.getElementById("inValor");
-  var outDataLimite = document.getElementById("outDataLimite");
-  var outDesconto = document.getElementById("outDesconto");
 
   var data = inData.value;
   var valor = Number(inValor.value);

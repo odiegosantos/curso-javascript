@@ -1,58 +1,39 @@
-const CHANCES = 5;
+var noticias = [];
 
-var erros = [];
-var sorteado = Math.floor(Math.random() * 100) + 1;
+function adicionarNoticias() {
+  var inNoticia = document.getElementById("inNoticia");
+  var outNumero = document.getElementById("outNumero");
 
-function apostarNumero() {
+  var noticia = inNoticia.value;
 
-  var inNumero = document.getElementById("inNumero");
-  var numero = Number(inNumero.value);
-
-  if (numero <= 0 || numero > 100 || isNaN(numero)) {
-    alert("Informe um Número válido...");
-    inNumero.focus();
+  if (noticia === "") {
+    alert("Informe a notícia a ser incluída");
+    inNoticia.focus();
     return;
   }
+  noticias.push(noticia);
+  outNumero.textContent = noticias.length;
 
-  var outDica = document.getElementById("outDica");
-  var outErros = document.getElementById("outErros");
-  var outChances = document.getElementById("outChances");
+  inNoticia.value = "";
+  inNoticia.focus();
+}
+var btAdicionar = document.getElementById("btAdicionar");
+btAdicionar.addEventListener("click", adicionarNoticias);
 
-  if (numero == sorteado) {
-    alert("Parabéns você Acertou!!!");
+function listarUltimas() {
+  var quantidade = Number(prompt("Listar quantas notícias?"));
+  var total = noticias.length;
 
-    btApostar.disabled = true;
-    btJogar.className = "exibe";
-    outDica.textContent = `Parabéns !! Número sorteado: ${sorteado}`;
-  } else {
-    if (erros.indexOf(numero) >= 0) {
-      alert(`Você já apostou o Número ${numero}. Tente outro...`);
-    } else {
-      erros.push(numero);
-      var numErros = erros.length;
-      var numChances = CHANCES - numErros;
-      outErros.textContent = `${numErros} ( ${erros.join(", ")})`;
-      outChances.textContent = numChances;
-      if (numChances == 0) {
-        alert("Suas Chances acabaram...");
-        btApostar.disabled = true;
-        btJogar.className = "exibe";
-        outDica.textContent = `Game Over!! Número Sorteado: ${sorteado}`;
-      } else {
-        var dica = numero < sorteado ? "maior" : "menor";
-        outDica.textContent = `Dica: Tente um Número ${dica} que ${numero}`;
-      }
-    }
+  if (quantidade === 0 || isNaN(quantidade) || quantidade > total) {
+    alert("Número inválido");
+    return;
   }
-  inNumero.value = "";
-  inNumero.focus();
-}
-var btApostar = document.getElementById("btApostar");
-btApostar.addEventListener("click", apostarNumero);
+  var ultimas = ` ${quantidade} Últimas Notícias\n-----------------------------------------------------\n`;
+  for (var i = total - 1; i >= total - quantidade; i--) {
+    ultimas += (i + 1) + "º) " + noticias[i] + "\n";
+  }
 
-var btJogar = document.getElementById("btJogar");
-btJogar.addEventListener("click", jogarNovamente);
-
-function jogarNovamente() {
-  location.reload();
+  document.getElementById("outLista").textContent = ultimas;
 }
+var btListar = document.getElementById("btListar");
+btListar.addEventListener("click", listarUltimas);

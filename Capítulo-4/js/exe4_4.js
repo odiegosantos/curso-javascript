@@ -1,4 +1,4 @@
-alert("Digite 0 para sair");
+console.log("Digite 0 para sair");
 do {
   let num = Number(prompt("digite um número ou digite 0 para sair"));
   if (num == 0 || isNaN(num)) {
@@ -10,10 +10,10 @@ do {
     }
   }
   if (num % 2 == 0) {
-    alert("O dobro de " + num + " é: " + num * 2);
+    console.log("O dobro de " + num + " é: " + num * 2);
   } else {
-    alert("O triplo de  " + num + " é: " + num * 3);
+    console.log("O triplo de  " + num + " é: " + num * 3);
   }
 } while (true); 
 
-alert("Goodbye!!!");
+console.log("Goodbye!!!");

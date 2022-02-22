@@ -1,7 +1,7 @@
 do {
   var num = Number(prompt("Digite um Número: "));
   if (num == 0 || isNaN(num)) {
-    alert("Digite um Número válido! ");
+    console.log("Digite um Número válido! ");
   }
 } while (num == 0 || isNaN(num));
 

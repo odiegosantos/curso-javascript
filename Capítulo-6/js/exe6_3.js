@@ -1,6 +1,5 @@
 function gerarEmail() {
   var inFuncionario = document.getElementById("inFuncionario");
-  var outEmail = document.getElementById("outEmail");
 
   var funcionario = inFuncionario.value;
 
@@ -19,7 +18,6 @@ function gerarEmail() {
   }
 
   email += partes[tam - 1] + "@empresa.com.br";
-
   outEmail.textContent = "Email: " + email.toLowerCase();
 }
 var btGerar = document.getElementById("btGerar");

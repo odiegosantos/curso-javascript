@@ -4,9 +4,6 @@ const JUROS = 0.33 / 100;
 function calcularMultaJuros() {
   var inData = document.getElementById("inData");
   var inValor = document.getElementById("inValor");
-  var outMulta = document.getElementById("outMulta");
-  var outJuros = document.getElementById("outJuros");
-  var outTotal = document.getElementById("outTotal");
 
   var dataVencimento = inData.value;
   var valor = Number(inValor.value);

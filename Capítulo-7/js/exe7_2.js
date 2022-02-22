@@ -2,7 +2,6 @@ var btExibir = document.getElementById("btExibir");
 
 btExibir.addEventListener("click", function () {
   var inPreco = document.getElementById("inPreco");
-  var outParcelas = document.getElementById("outParcelas");
 
   var preco = Number(inPreco.value);
 

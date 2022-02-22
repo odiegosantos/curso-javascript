@@ -25,8 +25,8 @@ function calcularVacina() {
   textoDesconto = `Desconto R$: ${desconto.toFixed(2)}`;
   textoPagar = `Valor R$: ${valorDesconto.toFixed(2)}`;
 
-  document.getElementById("outDesconto").textContent = `${textoDesconto}`;
-  document.getElementById("outPagar").textContent = `${textoPagar}`;
+  outDesconto.textContent = `${textoDesconto}`;
+  outPagar.textContent = `${textoPagar}`;
 }
 var btCalcular = document.getElementById("btCalcular");
 btCalcular.addEventListener("click", calcularVacina);

@@ -1,6 +1,5 @@
 function validarSenha() {
   var inSenha = document.getElementById("inSenha");
-  var outResposta = document.getElementById("outResposta");
 
   var senha = inSenha.value;
 

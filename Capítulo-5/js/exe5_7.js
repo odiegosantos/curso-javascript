@@ -39,7 +39,7 @@ function listarCandidatos() {
     lista += candidatos[i].nome + "- " + candidatos[i].acertos + " acertos\n";
   }
 
-  document.getElementById("outLista").textContent = lista;
+  outLista.textContent = lista;
 }
 var btListar = document.getElementById("btListar");
 btListar.addEventListener("click", listarCandidatos);
@@ -67,7 +67,6 @@ function exibirAprovados() {
       aprovados += copia[i].nome + " - " + copia[i].acertos + " acertos\n";
     }
   }
-  var outLista = document.getElementById("outLista");
 
   if (aprovados == "") {
     outLista.textContent = "Não há candidatos aprovados...";

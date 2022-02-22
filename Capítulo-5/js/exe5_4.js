@@ -38,8 +38,7 @@ function listarfilmes() {
   for (var i = 0; i < filmes.length; i++) {
     lista += `${filmes[i].nome} - ${filmes[i].ano}'s \n`;
   }
-
-  document.getElementById("outLista").textContent = lista;
+  outLista.textContent = lista;
 }
 var btListar = document.getElementById("btListar");
 btListar.addEventListener("click", listarfilmes);
@@ -74,7 +73,7 @@ function resumirLista() {
   resumo += (nomes.length / copia.length * 100).toFixed(2) + "%\n";
   resumo += "(" + nomes.join(", ") + ")\n\n";
 
-  document.getElementById("outLista").textContent = resumo;
+  outLista.textContent = resumo;
 }
 var btResumir = document.getElementById("btOrganizar");
 btResumir.addEventListener("click", resumirLista);

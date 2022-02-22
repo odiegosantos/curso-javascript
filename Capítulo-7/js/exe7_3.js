@@ -41,7 +41,6 @@ inDetalhes.addEventListener("keypress", function (tecla) {
 function adicionarItem() {
   var inPizza = document.getElementById("inPizza");
   var inBebida = document.getElementById("inBebida");
-  var outPedido = document.getElementById("outPedido");
 
   if (rbPizza.checked) {
     var num = inPizza.selectedIndex;

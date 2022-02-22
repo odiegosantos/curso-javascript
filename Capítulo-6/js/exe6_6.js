@@ -1,6 +1,5 @@
 function verificarPalidromo() {
   var inFrase = document.getElementById("inFrase");
-  var outResposta = document.getElementById("outResposta");
 
   var frase = inFrase.value.toLocaleUpperCase();
 

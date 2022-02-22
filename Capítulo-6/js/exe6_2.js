@@ -1,6 +1,5 @@
 function gerarCracha() {
   var inNome = document.getElementById("inNome");
-  var outCracha = document.getElementById("outCracha");
 
   var nome = inNome.value;
 
@@ -10,13 +9,10 @@ function gerarCracha() {
     return;
   }
 
-  var priEspaco = nome.indexOf(" "); // Posição do primeiro espaço
-  var ultEspaco = nome.lastIndexOf(" "); // Posição do ultimo espaço
-
-  // Copia o nome e sobrenome usando os parâmentros substr()
+  var priEspaco = nome.indexOf(" "); 
+  var ultEspaco = nome.lastIndexOf(" "); 
   var cracha = nome.substr(0, priEspaco) + nome.substr(ultEspaco);
 
-  // Altera o texto identificado na página 
   outCracha.textContent = "Crachá: " + cracha;
 }
 var btGerar = document.getElementById("btGerar");

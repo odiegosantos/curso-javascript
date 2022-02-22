@@ -1,6 +1,5 @@
 function gerarReferencia() {
   var inNome = document.getElementById("inNome");
-  var outReferencia = document.getElementById("outReferencia");
 
   var autor = inNome.value;
 

@@ -1,6 +1,5 @@
 function montarDica() {
   var inNome = document.getElementById("inNome");
-  var outDica = document.getElementById("outDica");
 
   var fruta = inNome.value.toUpperCase();
 

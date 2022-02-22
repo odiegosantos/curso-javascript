@@ -1,35 +1,33 @@
-var numContas = 0;
-var valTotal = 0;
-var resposta = "";
+function verificarPerfeito() {
+  var inNumero = document.getElementById("inNumero");
+  var numero = Number(inNumero.value);
 
-function registrarConta() {
-  var inDescricao = document.getElementById("inDescricao");
-  var inValor = document.getElementById("inValor");
-  var outListaContas = document.getElementById("outListaContas");
-  var outTotal = document.getElementById("outTotal");
-
-  var descricao = inDescricao.value;
-  var valor = Number(inValor.value);
-
-  if (descricao === "" || 0 || isNaN(valor)) {
-    alert("Informe os dados corretamente...");
-    inDescricao.focus;
+  if (numero === 0 || isNaN(numero)) {
+    alert("Informe um número válido...");
+    inNumero.focus();
     return;
   }
 
-  numContas++;
-  valTotal = valTotal + valor;
+  var divisores = `divisores de ${numero} são: 1`;
+  var soma = 1;
 
-  resposta = `${resposta} 
-  ${descricao} R$: ${valor.toFixed(2)}`;
+  for (var i = 2; i <= numero / 2; i++) {
+    if (numero % i === 0) {
+      divisores = divisores + ", " + i;
+      soma = soma + i
+    }
+  }
+  divisores = `${divisores} (Soma: ${soma} )`;
 
-  outListaContas.textContent = `${resposta}`;
-  outTotal.textContent = `${numContas} Conta(s) - Total R$: ${valTotal.toFixed(2)}`;
+  var simPerfeito = `${numero} - é um Número Perfeito`;
+  var naoPerfeito = `${numero} - Não é um Número Perfeito`;
 
-  inDescricao.value = "";
-  inValor.value = "";
-  inDescricao.focus();
-
+  if (numero === soma) {
+    outResposta.textContent = `${simPerfeito}`;
+  } else {
+    outResposta.textContent = `${naoPerfeito}`;
+  }
+  outDivisores.textContent = divisores;
 }
-var btRegistrar = document.getElementById("btRegistrar");
-btRegistrar.addEventListener("click", registrarConta);
+var btVerificar = document.getElementById("btVerificar");
+btVerificar.addEventListener("click", verificarPerfeito);

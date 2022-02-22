@@ -5,7 +5,7 @@ function listarNumeros() {
   var resposta = "Entre " + numero + " e 1: ";
 
   if (numero == 0 || isNaN(numero)) {
-    alert("Digite um Número");
+    console.log("Digite um Número");
     inNumero.focus();
     return;
   }
