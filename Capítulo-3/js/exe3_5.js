@@ -1,15 +1,14 @@
 function condicao() {
-  var inNumero = document.getElementById("inNumero");
-  var numero = Number(inNumero.value);
+  var numero = document.getElementById("inNumero").value;
 
   var raiz = Math.sqrt(numero);
-  var texto1 = `Raiz ${raiz}`;
-  var texto2 = `Não há raiz exata para ${numero}`;
+  var textoRaiz = `A Raiz de ${numero} é ${raiz}`;
+  var textoNaoRaiz = `Não há raiz exata para ${numero}`;
 
   if (raiz === Math.floor(raiz)) {
-    outSaida.textContent = `${texto1}`;
+    outSaida.textContent = `${textoRaiz}`;
   } else {
-    outSaida.textContent = `${texto2}`;
+    outSaida.textContent = `${textoNaoRaiz}`;
   }
 }
 

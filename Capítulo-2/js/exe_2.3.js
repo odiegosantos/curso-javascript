@@ -1,9 +1,6 @@
 function mostrarPromocao() {
-  var inPreco = document.getElementById("inPreco");
-  var inVeiculo = document.getElementById("inVeiculo");
-
-  var veiculo = inVeiculo.value;
-  var preco = Number(inPreco.value);
+  var preco = document.getElementById("inPreco").value;
+  var veiculo = document.getElementById("inVeiculo").value;
 
   var entrada = preco * 0.50;
   var parcela = (preco * 0.50) / 12;

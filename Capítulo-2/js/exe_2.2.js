@@ -1,10 +1,6 @@
 function converterDuracao() {
-
-  var inTitulo = document.getElementById("inTitulo");
-  var inDuracao = document.getElementById("inDuracao");
-
-  var titulo = inTitulo.value;
-  var duracao = Number(inDuracao.value);
+  var titulo = document.getElementById("inTitulo").value;
+  var duracao = document.getElementById("inDuracao").value;
 
   var horas = Math.floor(duracao / 60);
   var minutos = duracao % 60;

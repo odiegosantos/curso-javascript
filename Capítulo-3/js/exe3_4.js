@@ -1,14 +1,13 @@
 function condicao() {
-  var inHoraBrasil = document.getElementById("inHoraBrasil");
-  var horaBrasil = Number(inHoraBrasil.value);
+  var horaBrasil = document.getElementById("inHoraBrasil").value;
 
-  var horaNY = horaBrasil - 2;
-  if (horaNY > 24) {
-    horaNY = horaNY - 24;
+  var horaNewYork = horaBrasil - 2;
+  if (horaNewYork > 24) {
+    horaNewYork = horaNewYork - 24;
   }
 
-  var menssagem = `Hora em New York: ${horaNY.toFixed(2)}`;
-  outHoraNY.textContent = `${menssagem}`;
+  var mensagem = `Hora em New York: ${horaNewYork.toFixed(2)}`;
+  outHoraNewYork.textContent = `${mensagem}`;
 }
 
 function calcularFuso() {

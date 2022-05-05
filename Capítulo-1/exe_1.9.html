@@ -9,15 +9,17 @@
   <script>
     var jantar = Number(prompt("Valor do Jantar R$: "));
 
-    var garcom = jantar * 0.10;
+    var garcom = jantar * 0.15;
     var total = jantar + garcom;
     /*
         Outras formas de calcular e chegar ao mesmo resultado
         var total = jantar + (jantar * 0.10); ou 
         var total = jantar * 1.10;
     */
-    alert("Taxa Garçom R$: " + garcom.toFixed(2) +
-      "\nTotal R$: " + total.toFixed(2));
+    alert(`
+    Total R$: ${total.toFixed(2)}
+    \nTaxa Garçom R$: ${garcom.toFixed(2)} 
+    `);
   </script>
 </body>
 

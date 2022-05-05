@@ -1,16 +1,13 @@
 function verificarParImpar() {
-  let inNumero = document.getElementById("inNumero");
-  let numero = Number(inNumero.value);
+  let numero = document.getElementById("inNumero").value;
 
   let menssagemPar = `O Número: ${numero}  é Par!`;
   let menssagemImpar = `O Número: ${numero}  é Impar!`;
 
   if (numero % 2 == 0) {
-    outResposta
-      .textContent = `${menssagemPar}`;
+    outResposta.textContent = `${menssagemPar}`;
   } else {
-    outResposta
-      .textContent = `${menssagemImpar}`;
+    outResposta.textContent = `${menssagemImpar}`;
   }
 }
 

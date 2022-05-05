@@ -1,20 +1,18 @@
 function condicao() {
-  var inVelMax = document.getElementById("inVelMax");
-  var inVelCond = document.getElementById("inVelCond");
+  var velocidadeMaxima = document.getElementById("inVelocidadeMaxima").value;
+  var velocidadeCondutor = document.getElementById("inVelocidadeCondutor").value;
 
-  var velMaxima = Number(inVelMax.value);
-  var velCondutor = Number(inVelCond.value);
 
   var semMulta = "Situação: Sem Multa";
   var multaLeve = "Situação: Multa Leve";
   var multaGrave = "Situação: Multa Grave";
-  var maisVinte = velMaxima * 1.20;
+  var maisVinte = velocidadeMaxima * 1.20;
 
-  if (velCondutor <= velMaxima) {
+  if (velocidadeCondutor <= velocidadeMaxima) {
     outSituacao.textContent = `${semMulta}`;
   }
   else {
-    if (velCondutor <= maisVinte) {
+    if (velocidadeCondutor <= maisVinte) {
       outSituacao.textContent = `${multaLeve}`;
     } else {
       outSituacao.textContent = `${multaGrave}`;

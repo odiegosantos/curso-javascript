@@ -1,13 +1,11 @@
 function condicao() {
-  var inValor = document.getElementById("inValor");
-  var valor = Number(inValor.value);
+  var valor = document.getElementById("inValor").value;
 
   let tempo;
   let troco;
 
   if (valor == 0 || valor < 1.0 || isNaN(valor)) {
     alert("Informe um valor válido de moedas");
-    inValor.focus();
     return;
   }
   if (valor >= 3.00) {

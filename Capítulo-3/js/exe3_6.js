@@ -1,11 +1,9 @@
 function calcularNotas() {
-  var inSaque = document.getElementById("inSaque");
-  var saque = Number(inSaque.value);
+  var saque = document.getElementById("inSaque").value;
 
   if (saque == 0 || saque % 2 != 0 || isNaN(saque)) {
     document.getElementById("saida")
       .textContent = "Valores 2, 10, 20, 50, 100"
-    inSaque.focus();
     return;
   }
 
@@ -22,26 +20,21 @@ function calcularNotas() {
   var menssagemNota2 = "Notas de R$: 2";
 
   if (notasCem > 0) {
-    outNotasCem
-      .textContent = `${notasCem} ${menssagemNota100}`;
+    outNotasCem.textContent = `${notasCem} ${menssagemNota100}`;
   }
   if (notasCinquenta > 0) {
-    outNotasCinquenta
-      .textContent = `${notasCinquenta} ${menssagemNota50}`;
+    outNotasCinquenta.textContent = `${notasCinquenta} ${menssagemNota50}`;
   }
 
   if (notasVinte > 0) {
-    outNotasVinte
-      .textContent = `${notasVinte} ${menssagemNota20}`;
+    outNotasVinte.textContent = `${notasVinte} ${menssagemNota20}`;
   }
 
   if (notasDez > 0) {
-    outNotasDez
-      .textContent = `${notasDez} ${menssagemNota10}`;
+    outNotasDez.textContent = `${notasDez} ${menssagemNota10}`;
   }
   if (notasDois > 0) {
-    outNotasDois
-      .textContent = `${notasDois} ${menssagemNota2}`;
+    outNotasDois.textContent = `${notasDois} ${menssagemNota2}`;
   }
 }
 var btExibir = document.getElementById("btExibir");
