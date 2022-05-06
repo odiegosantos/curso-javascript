@@ -12,7 +12,6 @@ if (num > 1) {
 }
 
 for (var i = 4; i <= num; i = i + 2) {
-
   pares = pares + ", " + i;
 }
 alert(pares);

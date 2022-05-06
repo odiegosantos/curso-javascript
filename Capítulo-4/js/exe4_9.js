@@ -1,13 +1,10 @@
 function mostrarEvolucao() {
-  var inCoelho = document.getElementById("inCoelho");
-  var inAnos = document.getElementById("inAnos");
+  var coelho = document.getElementById("inCoelho").value;
+  var anos = document.getElementById("inAnos").value;
 
-  var coelho = inCoelho.value;
-  var anos = Number(inAnos.value);
 
-  if (coelho < 2 || isNaN(coelho) || anos == 0 || isNaN(anos)) {
+  if (coelho < 2 || isNaN(coelho) || anos === 0 || isNaN(anos)) {
     alert("Deve haver ao menos Dois Coelhos, e um período de no mínimo um Ano!");
-    inCoelho.focus();
     return;
   }
 

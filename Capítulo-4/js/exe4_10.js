@@ -1,16 +1,14 @@
 function criarEstrelas() {
-  var inNumero = document.getElementById("inNumero");
-  var num = Number(inNumero.value);
+  var numero = document.getElementById("inNumero").value;
 
-  if (num == 0 || isNaN(num)) {
+  if (numero === 0 || numero > 50 || isNaN(numero)) {
     alert("Digite um número válido!!!");
-    inNumero.focus();
     return;
   }
 
   var estrelas = "";
 
-  for (var i = 1; i <= num; i++) {
+  for (var i = 1; i <= numero; i++) {
     for (var j = 1; j <= i; j++) {
       estrelas = estrelas + "*"
     }

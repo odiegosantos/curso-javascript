@@ -1,43 +1,41 @@
 function verificar() {
-  var inNumero = document.getElementById("inNumero");
-  var num = Number(inNumero.value);
+  var numero = document.getElementById("inNumero").value;
 
-  if (num === 0 || isNaN(num)) {
+  if (numero === 0 || isNaN(numero)) {
     alert("Número Inválido");
-    inNumero.focus();
     return;
   }
 
   var temDivisor = 0;
 
-  for (var i = 2; i <= num / 2; i++) {
-    if (num % i == 0) {
+  for (var i = 2; i <= numero / 2; i++) {
+    if (numero % i === 0) {
       temDivisor = 1;
       break;
     }
   }
 
-  var simPrimo = `${num} é  Primo`;
-  var naoPrimo = `${num} Não é Primo`;
+  var simPrimo = `${numero} é  Primo`;
+  var naoPrimo = `${numero} Não é Primo`;
   
-  if (num > 1 && !temDivisor) {
+  if (numero > 1 && !temDivisor) {
     outResposta.textContent = `${simPrimo}`;
   } else {
     outResposta.textContent = `${naoPrimo}`;
   }
 
 // Outras formas de resolver o mesmo problema
-//   var numDivisores = 0;
-//   for (var i = 1; i <= num; i++) {
-//     if (num % i == 0) {
-//       numDivisores++;
+//   var numeroDivisores = 0;
+//   for (var i = 1; i <= numero; i++) {
+//     if (numero % i == 0) {
+//       numeroDivisores++;
 //     }
 //   }
 // 
-//   if (numDivisores == 2) {
-//     outResposta.textContent = `${num} É  Primo`;
+//   if (numeroDivisores == 2) {
+//     outResposta.textContent = `${numero} É  Primo`;
 //   } else {
-//     outResposta.textContent = `${num} Não é Primo`;
+//     outResposta.textContent = `${numero} Não é Primo`;
 //   }
 }
 var btVerificar = document.getElementById("btVerificar");

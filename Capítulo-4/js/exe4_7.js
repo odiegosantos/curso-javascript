@@ -1,17 +1,15 @@
 function preencherEstrelas() {
-  var inNumero = document.getElementById("inNumero");
-  var num = Number(inNumero.value);
-  
+  var numero = document.getElementById("inNumero").value;
+
   var estrelas = "";
 
-  if (num == 0 || isNaN(num)) {
+  if (numero === 0 || isNaN(numero)) {
     alert("Insira um número válido");
-    inNumero.focus();
     return;
   }
 
-  for (var i = 1; i <= num; i++) {
-    if (i % 2 == 1) {
+  for (var i = 1; i <= numero; i++) {
+    if (i % 2 === 1) {
       estrelas = `${estrelas} *`;
     } else {
       estrelas = `${estrelas} -`;

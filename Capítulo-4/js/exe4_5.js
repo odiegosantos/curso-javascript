@@ -1,10 +1,8 @@
 function verificarPerfeito() {
-  var inNumero = document.getElementById("inNumero");
-  var numero = Number(inNumero.value);
+  var numero = document.getElementById("inNumero").value;
 
   if (numero === 0 || isNaN(numero)) {
     alert("Informe um número válido...");
-    inNumero.focus();
     return;
   }
 

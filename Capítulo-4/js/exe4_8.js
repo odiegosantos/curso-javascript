@@ -1,19 +1,15 @@
 function imprimir() {
-  var inNome = document.getElementById("inNome");
-  var inNumero = document.getElementById("inNumero");
+  var nome = document.getElementById("inNome").value;
+  var numero = document.getElementById("inNumero").value;
 
-  var nome = inNome.value;
-  var num = Number(inNumero.value);
-
-  if (nome == "" || num == 0 || isNaN(num)) {
+  if (nome === "" || numero === '' || isNaN(numero)) {
     alert("Informe corretamente os dados");
-    inNome.focus();
     return;
   }
 
   var resposta = "";
 
-  for (var i = 1; i < num; i++) {
+  for (var i = 1; i < numero; i++) {
     resposta = resposta + nome + " * ";
   }
   resposta = resposta + nome;
