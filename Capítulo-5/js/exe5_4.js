@@ -20,7 +20,6 @@ function adicionarFilmes() {
 
   inNome.value = "";
   inDecada.value = "";
-  inNome.value = "";
 
   listarfilmes();
 }

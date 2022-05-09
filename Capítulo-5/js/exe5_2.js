@@ -1,21 +1,18 @@
 var noticias = [];
 
 function adicionarNoticias() {
-  var inNoticia = document.getElementById("inNoticia");
-  var outNumero = document.getElementById("outNumero");
-
-  var noticia = inNoticia.value;
+  var noticia = document.getElementById("inNoticia").value;
 
   if (noticia === "") {
     alert("Informe a notícia a ser incluída");
-    inNoticia.focus();
+    noticia.focus();
     return;
   }
   noticias.push(noticia);
   outNumero.textContent = noticias.length;
 
-  inNoticia.value = "";
-  inNoticia.focus();
+  noticia.value = "";
+  noticia.focus();
 }
 var btAdicionar = document.getElementById("btAdicionar");
 btAdicionar.addEventListener("click", adicionarNoticias);
@@ -33,7 +30,7 @@ function listarUltimas() {
     ultimas += (i + 1) + "º) " + noticias[i] + "\n";
   }
 
-  document.getElementById("outLista").textContent = ultimas;
+  outLista.textContent = ultimas;
 }
 var btListar = document.getElementById("btListar");
 btListar.addEventListener("click", listarUltimas);

@@ -58,12 +58,13 @@ function filtrarCarros() {
       lista += `${carros[i].modelo} - R$: ${carros[i].preco.toFixed(2)} \n`;
     }
   }
+  var NaoHaCarros = `Não há carros com preço até R$: ${maximo.toFixed(2)}`;
+  var carrosAte = `Carros até R$: ${maximo.toFixed(2)} \n-------------------------\n ${lista}`;
 
   if (lista == "") {
-    outLista.textContent = `Não há carros com preço até R$: ${maximo.toFixed(2)}`;
+    outLista.textContent = `${NaoHaCarros}`;
   } else {
-    outLista.textContent = `Carros até R$: ${maximo.toFixed(2)}
-      \n-------------------------\n ${lista}`;
+    outLista.textContent = `${carrosAte}`;
   }
 }
 var btFiltrar = document.getElementById("btFiltrar");

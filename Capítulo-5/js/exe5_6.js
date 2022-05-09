@@ -2,8 +2,6 @@ var numeros = [];
 
 function adicionarNumero() {
   var inNumero = document.getElementById("inNumero");
-  var outLista = document.getElementById("outLista");
-  var outOrdem = document.getElementById("outOrdem");
 
   var num = Number(inNumero.value);
 
