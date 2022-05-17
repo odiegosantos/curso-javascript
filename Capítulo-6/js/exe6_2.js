@@ -1,11 +1,9 @@
 function gerarCracha() {
-  var inNome = document.getElementById("inNome");
-
-  var nome = inNome.value;
+  var nome = document.getElementById("inNome").value;
 
   if (nome == "" || nome.indexOf(" ") == -1) {
     alert("Informe os dados corretamente");
-    inNome.focus();
+    nome.focus();
     return;
   }
 

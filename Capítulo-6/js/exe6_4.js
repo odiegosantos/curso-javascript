@@ -1,7 +1,5 @@
 function validarSenha() {
-  var inSenha = document.getElementById("inSenha");
-
-  var senha = inSenha.value;
+  var senha = document.getElementById("inSenha").value;
 
   var erros = [];
 
@@ -21,7 +19,7 @@ function validarSenha() {
     erros.push("possuir letras maiusculas (no mínimo, 2)");
   }
   if (!senha.match(/[\W|_]/g)) {
-    erros.push("possuir símbolos (no míninmo, 1)");
+    erros.push("possuir símbolos (no mínimo, 1)");
   }
 
   if (erros.length == 0) {

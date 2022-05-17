@@ -1,11 +1,8 @@
 function gerarReferencia() {
-  var inNome = document.getElementById("inNome");
-
-  var autor = inNome.value;
+  var autor = document.getElementById("inNome").value;
 
   if (autor === "" || autor.indexOf(" ") === -1) {
     alert("Informe o nome completo do Autor");
-    inNome.focus();
     return;
   }
 

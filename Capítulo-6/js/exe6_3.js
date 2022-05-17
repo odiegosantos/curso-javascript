@@ -1,11 +1,8 @@
 function gerarEmail() {
-  var inFuncionario = document.getElementById("inFuncionario");
+  var funcionario = document.getElementById("inFuncionario").value;
 
-  var funcionario = inFuncionario.value;
-
-  if (funcionario == "" || funcionario.indexOf(" ") == -1) {
+  if (funcionario === "" || funcionario.indexOf(" ") === -1) {
     alert("Informe o nome completo do Funcionário");
-    inFuncionario.focus();
     return;
   }
 
@@ -14,10 +11,10 @@ function gerarEmail() {
   var tam = partes.length;
 
   for (var i = 0; i < tam - 1; i++) {
-    email += partes[i].charAt(0);   // Obtem a letra inicial de cada item
+    email += partes[i].charAt(0);  
   }
-
   email += partes[tam - 1] + "@empresa.com.br";
+
   outEmail.textContent = "Email: " + email.toLowerCase();
 }
 var btGerar = document.getElementById("btGerar");
