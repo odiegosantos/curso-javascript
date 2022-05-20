@@ -1,19 +1,13 @@
 function mostrarDados() {
-  var inModelo = document.getElementById("inModelo");
-  var inAno = document.getElementById("inAno");
-  var inPreco = document.getElementById("inPreco");
-
-  var modelo = inModelo.value;
-  var ano = Number(inAno.value);
-  var preco = Number(inPreco.value);
+  var modelo = document.getElementById("inModelo").value;
+  var ano = document.getElementById("inAno").value;
+  var preco = document.getElementById("inPreco").value;
 
   if (modelo === "" || ano === 0 || isNaN(ano) || isNaN(preco)) {
     alert("Infrome corretamente os dados do veículo");
-    inModelo.focus();
     return;
   }
 
-  // Chama e atribui o retorno das funções às variáveis
   var classificacao = classificarVeiculo(ano);
   var precoVenda = calcularVenda(preco, classificacao);
   var textoPrecoVenda = `Preço de venda R$:`;

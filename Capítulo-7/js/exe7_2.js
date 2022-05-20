@@ -1,9 +1,7 @@
 var btExibir = document.getElementById("btExibir");
 
 btExibir.addEventListener("click", function () {
-  var inPreco = document.getElementById("inPreco");
-
-  var preco = Number(inPreco.value);
+  var preco = document.getElementById("inPreco").value;
 
   var lista = "";
   var textoOpcaoPagamento = `Opções de Pagamento`;

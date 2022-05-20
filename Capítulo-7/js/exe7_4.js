@@ -1,19 +1,18 @@
 function categoriaAtleta() {
-  var inAtleta = document.getElementById("inAtleta");
-  var inIdade = document.getElementById("inIdade");
+  var atleta = document.getElementById("inAtleta").value;
+  var idade = document.getElementById("inIdade").value;
 
-  var atleta = inAtleta.value;
-  var idade = Number(inIdade.value);
-
-  if (atleta == "" || idade == 0 || isNaN(idade)) {
+  if (atleta === "" || idade === 0 || isNaN(idade)) {
     alert("Informe os dados Corretamente");
-    inAtleta.focus();
     return;
   }
 
   var sublinhado = gerarTracos(atleta);
   var categoria = verCategoria(idade);
-  var saida = `${atleta} \n ${sublinhado} \n Categoria: ${categoria}`;
+  var saida = `${atleta} 
+  ${sublinhado} 
+  Categoria: ${categoria}
+  `;
 
   document.getElementById("outSaida").textContent = `${saida}`;
 }

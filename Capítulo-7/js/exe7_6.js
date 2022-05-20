@@ -1,12 +1,9 @@
 function calcularVacina() {
-  var inValor = document.getElementById("inValor");
+  var valor = document.getElementById("inValor").value;
   var convenio = document.getElementById("inConvenio");
-
-  var valor = Number(inValor.value);
 
   if (valor == 0 || isNaN(valor)) {
     alert("Informe apenas números");
-    inValor.focus();
     return;
   }
 
